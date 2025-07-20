@@ -1,7 +1,7 @@
 const express = require('express')
 const cors = require('cors')
 const app = express()
-const port = 7320
+const port = process.env.port || 7320
 app.use(cors())
 let state = {
     ME:{
